@@ -1,23 +1,13 @@
-import logo from './logo.svg';
+import Btn from './Btn';
 import './App.css';
+import ModeToggler from './ModeToggler';
 
-function Header() {
-  return <h1>hello worlds</h1>;
-}
 
-function Logo(props)  {
-  const userPic = <img src={logo} />;
-  return userPic;
-}
 
 function App(props) {
 
   return (
-    <div>
-  <Header/>
-  <h1>{props.title}</h1>
-   <Logo/>
-  </div>
+    <ModeToggler/>
   );
 }
 
